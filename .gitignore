@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+
+
+# misc
+.env
+.nyc_output
+coverage
+mochawesome-report
