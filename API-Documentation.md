@@ -18,8 +18,7 @@ This API does not require authentication for accessing the public endpoints. Sim
 In case of errors, the API will respond with appropriate error status codes and error messages. Please refer to the [HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) documentation for more information.
 
 ## Endpoints
-
-### Get Subscribers
+### Get Subscribers 
 **Description:** Retrieve a list of all subscribers.
 
 - **Endpoint:** ` /subscribers`
@@ -28,7 +27,8 @@ In case of errors, the API will respond with appropriate error status codes and 
   - Status Code: 200 OK
   - Content-Type: application/json
   - Example Response:
-    ```json
+  <img src="https://github.com/Abhi1o/get_youtube_subscribers/assets/87490161/c24f6814-9755-4d00-a6a7-8be091fd322a">
+    <!-- ```json
     [   
       {
         "_id": {"$oid": "64d39e9dec691d30784ffadd"},
@@ -49,14 +49,14 @@ In case of errors, the API will respond with appropriate error status codes and 
         "subscribedDate": {"$date": "2023-08-09T14:11:41459Z"},
       }
     ]
-    ```
-    
-  - Error : 400
-  - Error Message: NoSubscriber found related to this ID
+    ``` -->
+- **Endpoint-Specific Errors**
+  - Error : `400 (Bad Request)`
+  - Error Message: `Invalid parameters`
+---
 ### Get Subscribers by Name
 
 **Description:** Retrieve subscriber(s) based on their name.
-
 - **Endpoint:**`  /subscribers/names `
 - **Method:** GET
 - **Query Parameters:**
@@ -65,7 +65,8 @@ In case of errors, the API will respond with appropriate error status codes and 
   - Status Code: 200 OK
   - Content-Type: application/json
   - Example Response:
-    ```json
+  <img src="https://github.com/Abhi1o/get_youtube_subscribers/assets/87490161/40263252-80f1-4e18-b546-4a5570eeee14">
+    <!-- ```json
     [
       {
         "name": "Jeread Krus",
@@ -80,9 +81,14 @@ In case of errors, the API will respond with appropriate error status codes and 
         "subscribedChannel": "Sentex",
       }
     ]
-    ```
+    ``` -->
+- **Endpoint-Specific Errors**
+  - Status Code: `400`
+  - Message: `Invalid format.`
+----
 
 ### Get Subscriber by ID
+
 **Description:** Retrieve a specific subscriber based on their ID.
 - **Endpoint:**` /subscribers/id`
 - **Query Parameters:**
@@ -91,15 +97,22 @@ In case of errors, the API will respond with appropriate error status codes and 
   - Status Code: `200 OK`
   - Content-Type: `application/json`
   - Example Response:
-    ```json
+  <img src="https://github.com/Abhi1o/get_youtube_subscribers/assets/87490161/c40b08dc-5981-48dc-8400-22b434fa93ab">
+    <!-- ```json
     {
         "_id": {"$oid": "64d39e9dec691d30784ffadd"},
         "name": "Jeread Krus",
         "subscribedChannel": "CNET",
         "subscribedDate": {"$date": "2023-08-09T14:11:41.455Z"},
     }
-    ```
+    ``` -->
+- **Endpoint-Errors**:
+  - Status Code: `400`
+  - Message: `Invalid subscriber ID format.`
+  - Example Response:
+  <img src="https://github.com/Abhi1o/get_youtube_subscribers/assets/87490161/4cb15bd5-1906-4783-beec-6e21aa8ba974">
 
+###
 
 ---
 
