@@ -64,7 +64,9 @@ app.get("/subscribers/:id", async (req, res) => {
     // Error status and message
     res
       .status(400)
-      .send({ message: "No Subscriber found related to this id." });
+      .send({
+        Status_code:"400",
+        Error_message: "No Subscriber found related to this id." });
   }
 });
 
