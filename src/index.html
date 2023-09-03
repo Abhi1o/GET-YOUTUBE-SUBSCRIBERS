@@ -7,11 +7,15 @@
       body {
         /* background-color: seagreen; #27363b;*/
         background-color: #3fafaa;
+        display: flex;
         
       }
       .container {
         margin: 10%;
-        padding: 2px 0px 50px 0px;
+        justify-content:center;
+        align-items:center;
+        margin: auto;
+        padding: 30px 0px 50px 0px;
         font-family: Tahoma,Helvetica,"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         /* background-color: rgb(248, 252, 255); */
         background-color:  #0c3644;
@@ -38,18 +42,13 @@
       }
       em {
         color: #41ada8;
+        background-color: #ffffff;
       }
       hr {
         width: 85%;
         color: #009b95;
       }
-      footer {
-        font-family: Helvetica;
-        text-align: right;
-        color:#27363b;
-        position: relative;
-        bottom: -33;
-      }
+     
     </style>
   </head>
   <body>
@@ -64,25 +63,21 @@
         <ol>
           <li>
             <p>
-              <strong>GET </strong><b><em>/subscribers</em></b>: Response with an array of subscribers (an Object).
+              <strong>GET </strong><b><em>/subscribers </em></b>: Response with an array of subscribers (an Object).
             </p>
           </li>
           <li>
             <p>
-              <strong>GET </strong><b><em>/subscribers/names</em></b>: Response with an array of subscribers (an Object with two
-              fields name & subscribed channel!)
+              <strong>GET </strong><b><em>/subscribers/names </em></b>: Response with an array of subscribers (an Object with fields name & subscribed channel!)
             </p>
           </li>
           <li>
             <p>
-              <strong>GET </strong><b><em>/subscribers/:id</em></b>: Response with a subscriber (an Object) with given id.
+              <strong>GET </strong><b><em>/subscribers/:id </em></b>: Response with a subscriber (an Object) with given id.
             </p>
           </li>
         </ol>
       </div>
     </div>
-    <footer>
-      <p>Presented by: AlmaSquad</p>
-    </footer>
   </body>
 </html>
