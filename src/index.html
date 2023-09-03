@@ -5,72 +5,79 @@
     <title>GET Youtube Subscribers</title>
     <style>
       body {
-        background-color: seagreen;
+        /* background-color: seagreen; #27363b;*/
+        background-color: #3fafaa;
         
       }
       .container {
         margin: 10%;
         padding: 2px 0px 50px 0px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: rgb(248, 252, 255);
-        border-radius: 7px;
-        color: rgb(36, 36, 36);
+        font-family: Tahoma,Helvetica,"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* background-color: rgb(248, 252, 255); */
+        background-color:  #0c3644;
+        border-radius: 12px;
+        color:#ffffff;
       }
       h1 {
         text-align: center;
-        font-size: 35px;
-        background-color: rgb(255, 255, 255);
-        margin-bottom: 60px;
+        font-size: 250%;
+        color:#ffffff;
+        /* background-color: rgb(255, 255, 255); */
+        /* margin-bottom: 60px; */
       }
       b {
-        color: #cd201f;
+        color: #f76d6d;
       }
       ol {
-        padding:5px 0 0 170px;
+        padding:1% 0 0 10%;
       }
     
       h3 {
         text-align: center;
+        color: #ffffff;
       }
       em {
-        color: #052dff;
+        color: #41ada8;
+        background-color: #ffffff;
       }
       hr {
-        width: 73%;
+        width: 85%;
+        color: #009b95;
       }
       footer {
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        font-family: Helvetica;
         text-align: right;
-        color:rgba(0, 0, 0, 0.8)
+        color:#0e1416;
+        position: relative;
+        bottom: -33;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div>
-        <h1>Get <b>YouTube</b> Subscribers</h1>
+        <h1>GET <b>YOUTUBE</b> SUBSCRIBERS</h1>
       </div>
+      <hr />
       <div>
-        <h3>The APIs provided by this application are following:</h3>
-        <hr />
+        <h3>THE APIs PROVIDED BY THIS APPLICATION ARE FOLLOWING:</h3>
+        
         <ol>
           <li>
             <p>
-              <strong>GET </strong><b><em>/subscribers</em></b
-              >: Response with an array of subscribers (an Object).
+              <strong>GET </strong><b><em>/subscribers </em></b>: Response with an array of subscribers (an Object).
             </p>
           </li>
           <li>
             <p>
-              <strong>GET </strong><b><em>/subscribers/names</em></b
-              >: Response with an array of subscribers (an Object with two
-              fields name & subscribedchannel!)
+              <strong>GET </strong><b><em>/subscribers/names </em></b>: Response with an array of subscribers (an Object with two
+              fields name & subscribed channel!)
             </p>
           </li>
           <li>
             <p>
-              <strong>GET </strong><b><em>/subscribers/:id</em></b
-              >: Response with a subscriber (an Object) with given id.
+              <strong>GET </strong><b><em>/subscribers/:id </em></b>: Response with a subscriber (an Object) with given id.
             </p>
           </li>
         </ol>
