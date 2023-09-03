@@ -21,6 +21,8 @@ Node.js app to get all details of youtube subscribers.
 ## Introduction 📝
 Get_YouTube_Subscriber is a Application that serves as a RESTful API  created by using Mongodb in Node.js. It is designed to fetch all subscribers information related to YouTube channel subscribers.The primary technologies used in development of this project are Node.js and Express.js which are used to create this API endpoint and manage HTTP request. Additionally, the project utilizes MongoDB as the database to store and manage subscribers data efficiently.
 
+![Get YT SUB](https://github.com/Abhi1o/GET-YOUTUBE-SUBSCRIBERS/assets/87490161/7e4f4776-cd79-4577-bb26-2ef06b30fa0a)
+
 ## Features 🧐
 A few of the features of project :
 - **Seamless Data Retrieval:** Effortlessly fetch subscriber data from YouTube channels using API endpoints.
@@ -77,7 +79,7 @@ To run this project locally, make sure you have the following installed:
 
 
 ## API Reference 🔗
-Following API endpoints for retrieving subscriber information using the GET method. For more details refer to the [API-Documentation](./API-Documentation.md).
+Following API endpoints for retrieving subscriber information using the GET method. For more refer to the [API-Documentation](./API-Documentation.md).
 
 - `/subscribers`: Retrieve a list of all subscribers. Returns subscriber ID, name, subscribed channels and date.
 - `/subscribers/names`: Obtain subscriber names along with the channels they are subscribed to.
