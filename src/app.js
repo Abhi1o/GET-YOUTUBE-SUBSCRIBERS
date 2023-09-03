@@ -50,7 +50,7 @@ app.get("/id", async (req, res) => {
     // res.status(200).send(subscribers);
     res.status(200).send(subscriberID);
   } catch (error) {
-    res.status(500);
+    res.status(400);
   }
 });
 
@@ -63,16 +63,15 @@ app.get("/subscribers/:id", async (req, res) => {
   } catch (error) {
     // Error status and message
     res
-      .status(400)
-      .send({
-        Status_code:"400",
+      .status(400)  //Error status code
+      .send({ // Error Message
         Error_message: "No Subscriber found related to this id." });
   }
 });
 
 // Handles all the unwanted request
 app.use((req, res) => {
-    res.status(404).json({ message: "Error - Route not found" }); // Send a JSON response with a status of 404 (Not Found)
+    res.status(400).json({ message: "Error - Route not found" }); // Send a JSON response with a status of 404 (Not Found)
 });
 
 module.exports = app;
