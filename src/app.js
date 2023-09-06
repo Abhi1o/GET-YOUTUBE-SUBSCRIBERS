@@ -42,7 +42,6 @@ app.get("/subscribers/names", async (req, res) => {
   }
 });
 
-
 // API to get subscribers by id
 app.get("/subscribers/:id", async (req, res) => {
   try {
@@ -59,8 +58,8 @@ app.get("/subscribers/:id", async (req, res) => {
 });
 
 // Handles all the unwanted request
-// app.use((req, res) => {
-//     res.status(404).json({ message: "Error - Route not found" }); // Send a JSON response with a status of 404 (Not Found)
-// });
+app.use((req, res) => {
+    res.status(404).json({ message: "Error - Route not found" }); // Send a JSON response with a status of 404 (Not Found)
+});
 
 module.exports = app;

@@ -33,6 +33,6 @@ db.once("open", () => console.log("connected to database"));
 
 // Start Server and make it listen on the specified port
 // A message will be printed to the console once the server is up and running
-module.exports= app.listen(port, () =>
+app.listen(port, () =>
     console.log(`App listening on port ${port}!`)
-);;
+);

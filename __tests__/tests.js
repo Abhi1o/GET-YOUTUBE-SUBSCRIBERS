@@ -36,23 +36,6 @@ describe('Subscribers API', () => {
   });
 
   // // Test for the GET /subscribers/id endpoint
-  // describe('GET /subscribers/id', () => {
-  //   it('should get subscriber information by ID', async (done) => {
-  //     let getSubscriberId = await Subscriber.findOne(); 
-  //     let subscriberId = getSubscriberId._id.toString(); 
-  //     await chai.request(app)
-  //     .get(`/subscribers/${subscriberId}`)
-      
-  //         console.log(subscriberId);// Replace with a valid subscriber ID
-  //         if (err) return done(err);
-  //         expect(res).to.have.status(200);
-  //         expect(res.body).to.have.property('_id', subscriberId);
-  //         // Add more assertions as needed
-  //            done();
-      
-        
-  //   });
-  // });
 
   describe('GET /subscribers/:id', () => {
     it('should get subscriber information by ID', async () => {
@@ -78,3 +61,14 @@ describe('Subscribers API', () => {
   });
 
 });
+
+
+
+/* Note!  Before running "npm test" code, add 'module.exports=' in index.js file on line 36. 
+
+          After adding, code should look like this : 
+
+          module.exports = app.listen(port, () =>
+                console.log(`App listening on port ${port}!`)
+          ); 
+*/
