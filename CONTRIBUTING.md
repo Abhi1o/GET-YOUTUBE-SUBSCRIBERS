@@ -1,77 +1,42 @@
-# Contributing to Get Youtube Subscribers
+## Contributing to Get Youtube Subscribers
 
-Welcome to Get Youtube Subscribers! We appreciate your interest in contributing to our web application. By contributing, you can help improve the functionality, usability, and overall quality of the application. This document provides guidelines and instructions on how to contribute effectively.
+[fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks
+[clone]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+[pr]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+[style]: https://standardjs.com/
+[code-of-conduct]: https://docs.github.com/en/site-policy/github-terms/github-community-code-of-conduct
 
-## Table of Contents
+Hi there! We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.
 
-- [Getting Started](#getting-started)
-- [Contributing Guidelines](#contributing-guidelines)
-  - [Bug Reports](#bug-reports)
-  - [Feature Requests](#feature-requests)
-  - [Pull Requests](#pull-requests)
-- [Development Setup](#development-setup)
-- [Code Style](#code-style)
-- [License](#license)
+Please note that this project is released with a [Contributor Code of Conduct][code-of-conduct]. By participating in this project you agree to abide by its terms.
 
+## Issues and PRs
 
-## Getting Started
+If you have suggestions for how this project could be improved, or want to report a bug, open an issue! We'd love all and any contributions. If you have questions, too, we'd love to hear them.
 
-Before you start contributing, please make sure you have a GitHub account. If not, you can create one at [https://github.com/join](https://github.com/join).
+We'd also love PRs. If you're thinking of a large PR, we advise opening up an issue first to talk about it, though! Look at the links below if you're not sure how to open a PR.
 
-To contribute to Get Youtube Subscribers, follow these steps:
+## Submitting a pull request
 
-1. Fork the repository on GitHub.
-2. Clone your forked repository to your local machine.
-3. Create a new branch for your contribution.
-4. Make your desired changes and additions.
-5. Commit and push your changes to your branch.
-6. Submit a pull request to the **'master'** branch of the main repository.
+1. [Fork][fork] and [clone][clone] the repository.
+1. Configure and install the dependencies: `npm install`.
+1. Make sure the tests pass on your machine: `npm test`.
+1. Create a new branch: `git checkout -b my-branch-name`.
+1. Make your change, add tests, and make sure the tests still pass.
+1. Push to your fork and [submit a pull request][pr].
+1. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
-## Contributing Guidelines
+Here are a few things you can do that will increase the likelihood of your pull request being accepted:
 
-#### Bug Reports
+- Follow the [style guide][style] which is using standard. Any linting errors should be shown when running `npm test`.
+- Write and update tests.
+- Keep your changes as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
+- Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
-If you encounter a bug while using Get Youtube Subscribers, please help us by reporting it. When submitting a bug report, provide as much detail as possible, including:
+Work in Progress pull requests are also welcome to get feedback early on, or if there is something blocked you.
 
-- A clear and descriptive title.
-- Steps to reproduce the bug.
-- Expected behavior.
-- Actual behavior.
-- Any relevant error messages or screenshots.
+## Resources
 
-## Feature Requests
-
-We welcome feature requests that can enhance the functionality and user experience of Get Youtube Subscribers. When submitting a feature request, please include:
-
-- A clear and descriptive title.
-- A detailed description of the proposed feature.
-- Any additional context or examples that can help clarify the feature.
-
-## Pull Requests
-
-We encourage and appreciate contributions through pull requests. When submitting a pull request, please follow these guidelines:
-
-- Provide a clear and descriptive title for your pull request.
-- Describe the purpose and scope of your changes.
-- Ensure that your code adheres to the code style guidelines (see Code Style).
-- Test your changes thoroughly and provide relevant test cases if applicable.
-- Ensure your branch is up to date with the latest changes from the main branch before submitting the pull request.
-
-## Development Setup
-
-To set up the development environment for Get Youtube Subscribers, follow these steps:
-
-- Clone the repository to your local machine.
-- Install the necessary dependencies using npm install.
-- Start the development server using npm start.
-- Access the web app in your browser at http://localhost:3000
-
-## Code Style
-
-To maintain consistency and readability, Get Youtube Subscribers follows a specific code style. Please ensure that your contributions adhere to the established code style guidelines. If necessary, refer to the project's documentation or existing code for guidance.
-
-## License
-
-By contributing to Flashcard Generator, you agree that your contributions will be licensed under the [ISC](./LICENSE) License.
-
-Thank you for considering contributing to Get Youtube Subscribers! We appreciate your support and looking forward to your valuable contributions. If you have any questions, feel free to reach out to the project maintainers or refer to the [README.md](./README.md) file for additional information.
+- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+- [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
+- [GitHub Help](https://help.github.com)

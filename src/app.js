@@ -40,20 +40,6 @@ app.get("/subscribers/names", async (req, res) => {
   }
 });
 
-// API to get all subscribers by name and subscribedChannel
-// app.get("/id", async (req, res) => {
-//   try {
-//     let subscribers = await Subscriber.findOne(
-//     );
-//     //Response data
-//     let subscriberID= subscribers._id;
-//     // res.status(200).send(subscribers);
-//     res.status(200).send(subscriberID);
-//   } catch (error) {
-//     res.status(500);
-//   }
-// });
-
 // API to get subscribers by id
 app.get("/subscribers/:id", async (req, res) => {
   try {
@@ -63,9 +49,8 @@ app.get("/subscribers/:id", async (req, res) => {
   } catch (error) {
     // Error status and message
     res
-      .status(400)
-      .send({
-        Status_code:"400",
+      .status(400)  //Error status code
+      .send({ // Error Message
         Error_message: "No Subscriber found related to this id." });
   }
 });

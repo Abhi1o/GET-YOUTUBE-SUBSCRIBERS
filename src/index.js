@@ -35,4 +35,4 @@ db.once("open", () => console.log("connected to database"));
 // A message will be printed to the console once the server is up and running
 app.listen(port, () =>
     console.log(`App listening on port ${port}!`)
-);;
+);
