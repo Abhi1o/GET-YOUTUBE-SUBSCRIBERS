@@ -1,7 +1,7 @@
 <h1 align="center"> 
-GET_YOUTUBE_SUBSCRIBERS
+GET YOUTUBE SUBSCRIBERS
 </h1>
-Node.js app to get all details of youtube subscribers.
+<p align="center">Node.js application to get all details of youtube subscribers.</p>
 
 ## Table of Contents 📑
 
@@ -19,23 +19,23 @@ Node.js app to get all details of youtube subscribers.
 
 
 ## Introduction 📝
-Get_YouTube_Subscriber is a Application that serves as a RESTful API  created by using Mongodb in Node.js. It is designed to fetch all subscribers information related to YouTube channel subscribers.The primary technologies used in development of this project are Node.js and Express.js which are used to create this API endpoint and manage HTTP request. Additionally, the project utilizes MongoDB as the database to store and manage subscribers data efficiently.
+Get YouTube Subscribers is an Application that serves as a RESTful API created by using Mongodb in Node.js. It is designed to fetch all subscribers information related to YouTube channel subscribers. The primary technologies used to develop this application are Node.js and Express.js which are used to create API endpoint and manage HTTP request. Additionally, this application utilizes MongoDB as the database to store and manage subscribers data efficiently.
 
 ![Get YT SUB](https://github.com/Abhi1o/GET-YOUTUBE-SUBSCRIBERS/assets/87490161/7e4f4776-cd79-4577-bb26-2ef06b30fa0a)
 
 ## Features 🧐
-A few of the features of project :
-- **Seamless Data Retrieval:** Effortlessly fetch subscriber data from YouTube channels using API endpoints.
+Some features of this application :
+- **Seamless Data Retrieval:** Effortlessly fetch subscribers data from YouTube channels using API endpoints.
 - **Structured JSON Output:** Present retrieved data in well-organized JSON format for easy interpretation.
 - **Versatile API Endpoints:** Provide users with multiple API endpoints catering to various data retrieval needs.
 - **Effective YouTube Data API Integration:** Interact seamlessly with the YouTube Data API for accurate data retrieval.
 - **User-Friendly Setup:** Follow a straightforward setup process, enabling swift utilization of the tool.
 
 ## Tech Stack 👨‍💻
-GET_Youtube_Subscriber is build using the following technologies:
+GET-Youtube-Subscriber is build using the following technologies:
 
 - **Node.js:** A runtime environment that execute javaScript code on the server-side.
-- **Express:** Node.js framework for building web application and RESTful API.
+- **Express.js:** A node.js framework for building web application and RESTful API.
 - **MongoDB:** Is NoSQL Database system that stores and manage data in JSON-like format.
 
 ## Prerequisites 📚
@@ -48,11 +48,11 @@ To run this project locally, make sure you have the following installed:
 ## Installation and Run 🛠️
 1. Clone the repository from GitHub:
     ```
-     git clone https://github.com/Abhi1o/get_youtube_subscribers
+     git clone https://github.com/Abhi1o/GET-YOUTUBE-SUBSCRIBERS
     ```
 2. Redirect to the project folder:
     ```
-     cd get_youtube_subscribers
+     cd GET-YOUTUBE-SUBSCRIBERS
     ```
 3. Install the required dependencies:
     ```
@@ -66,9 +66,9 @@ To run this project locally, make sure you have the following installed:
        DATABASE_URI= <your_uri_here>         # The MongoDB connection string
       ```
 5. Create Database:
-    - inserting subscribers data into MongoDB .
+    - Inserting subscribers data into MongoDB.
         ```
-         node createDB
+         npm run createDB
         ```
 6. Start server:
     ```
@@ -79,28 +79,30 @@ To run this project locally, make sure you have the following installed:
 
 
 ## API Reference 🔗
-Following API endpoints for retrieving subscriber information using the GET method. For more refer to the [API-Documentation](./API-Documentation.md).
+Following API endpoints for retrieving subscribers information using the GET method. For more refer to the [API-Documentation](./API-Documentation.md).
 
-- `/subscribers`: Retrieve a list of all subscribers. Returns subscriber ID, name, subscribed channels and date.
-- `/subscribers/names`: Obtain subscriber names along with the channels they are subscribed to.
+- `/subscribers`: Retrieve a list of all subscribers with their ID, name, subscribed channel and date.
+- `/subscribers/names`: Obtain subscribers name along with the channel they are subscribed to.
 - `/subscribers/id`: Access subscriber information based on their ID.
 
 ## Contribute 🤝
-Contributions are welcome! If you'd like to contribute, please follow our [Contribution Guidelines](https://chat.openai.com/c/CONTRIBUTING.md).
+Contributions are welcome! If you'd like to contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
 ## Contributors ✨
-- Abhishek Kumar [GitHub](https://github.com/abhi1o) | [LinkedIn](https://linkedin.com/in/abhi--)
-- Aman Giri [GitHub](https://github.com/amangiri7) | [LinkedIn](https://www.linkedin.com/in/aman-giri-6b3a3b284/)
-- Damini Dadpal [GitHub](https://github.com/Daminigadpal) | [LinkedIn](https://www.linkedin.com/in/damini-gadpal-01996716b)
+- Abhishek Kumar [GitHub](https://github.com/abhi1o) | [LinkedIn](https://linkedin.com/in/abhi--) | [YouTube]()
+- Aman Giri [GitHub](https://github.com/amangiri7) | [LinkedIn](https://www.linkedin.com/in/aman-giri-6b3a3b284/) | [YouTube]()
+- Damini Gadpal [GitHub](https://github.com/Daminigadpal) | [LinkedIn](https://www.linkedin.com/in/damini-gadpal-01996716b) | [YouTube]()
 
 ## License ⚖
-This project is Distributed under the [MIT License](https://chat.openai.com/c/LICENSE). See [LICENSE](./LICENCE) for more information.
+This project is Distributed under the ISC License. See [LICENSE](./LICENSE) for more information.
 
 ## Contact 📧
-If you have any questions or suggestions, feel free to reach out to us at [Gmail](https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpRTLLzBwPQQPrxwhcMFlhGsCCzkPBPmTSZNGGhzMxSJLJXKCFZtNjDqGtfcLQxzTTsftC).
+If you have any questions or suggestions, feel free to reach out to us at [Gmail](https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLPhhCThjSQBxqqKCTksFHbgmPZGmrTXlskrtrXBgHxRqbmdRdzJJlNBtvTWsTLmjdVLbb).
 
-## Acknowledgments 👍
+## Acknowledgment 👍
 We'd like to thank the open-source community and the creators of Node.js, Express, and MongoDB for their valuable contributions.
+
+We would also like to thank the contributors to this project for their valuable contributions.
 
 
 
