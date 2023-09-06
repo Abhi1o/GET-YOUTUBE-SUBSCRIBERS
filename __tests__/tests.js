@@ -35,46 +35,46 @@ describe('Subscribers API', () => {
     });
   });
 
-  // Test for the GET /subscribers/id endpoint
-  describe('GET /subscribers/id', () => {
-    it('should get subscriber information by ID', async (done) => {
-      let getSubscriberId = await Subscriber.findOne(); 
-      let subscriberId = getSubscriberId._id.toString(); 
-      await chai.request(app)
-      .get(`/subscribers/${subscriberId}`)
+  // // Test for the GET /subscribers/id endpoint
+  // describe('GET /subscribers/id', () => {
+  //   it('should get subscriber information by ID', async (done) => {
+  //     let getSubscriberId = await Subscriber.findOne(); 
+  //     let subscriberId = getSubscriberId._id.toString(); 
+  //     await chai.request(app)
+  //     .get(`/subscribers/${subscriberId}`)
       
-          console.log(subscriberId);// Replace with a valid subscriber ID
-          if (err) return done(err);
-          expect(res).to.have.status(200);
-          expect(res.body).to.have.property('_id', subscriberId);
-          // Add more assertions as needed
-             done();
+  //         console.log(subscriberId);// Replace with a valid subscriber ID
+  //         if (err) return done(err);
+  //         expect(res).to.have.status(200);
+  //         expect(res.body).to.have.property('_id', subscriberId);
+  //         // Add more assertions as needed
+  //            done();
       
         
-    });
-  });
-
-  // describe('GET /subscribers/id', () => {
-  //   it('should get subscriber information by ID', async () => {
-  //     // Fetch a subscriber document from the collection
-  //     const subscriber = await Subscriber.findOne();
-
-  //     // Make sure a subscriber document was found
-  //     if (!subscriber) {
-  //       throw new Error('No subscriber documents found in the collection.');
-  //     }
-
-  //     // Get the _id from the fetched subscriber document
-  //     const subscriberId = subscriber._id.toString();
-
-  //     // Making the actual request using chai-http
-  //     const response = await chai.request(app).get(`/subscribers/${subscriberId}`);
-      
-  //     // Assertions
-  //     expect(response).to.have.status(200);
-  //     expect(response.body).to.have.property('_id', subscriberId);
-  //     // Add more assertions as needed
   //   });
   // });
+
+  describe('GET /subscribers/:id', () => {
+    it('should get subscriber information by ID', async () => {
+      // Fetch a subscriber document from the collection
+      const subscriber = await Subscriber.findOne();
+
+      // Make sure a subscriber document was found
+      if (!subscriber) {
+        throw new Error('No subscriber documents found in the collection.');
+      }
+
+      // Get the _id from the fetched subscriber document
+      const subscriberId = subscriber._id.toString();
+
+      // Making the actual request using chai-http
+      const response = await chai.request(app).get(`/subscribers/${subscriberId}`);
+      
+      // Assertions
+      expect(response).to.have.status(200);
+      expect(response.body).to.have.property('_id', subscriberId);
+      // Add more assertions as needed
+    });
+  });
 
 });
