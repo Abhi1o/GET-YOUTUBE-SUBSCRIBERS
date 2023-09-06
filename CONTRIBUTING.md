@@ -72,6 +72,6 @@ To maintain consistency and readability, Get Youtube Subscribers follows a speci
 
 ## License
 
-By contributing to Flashcard Generator, you agree that your contributions will be licensed under the [MIT](./LICENSE.txt) License.
+By contributing to Flashcard Generator, you agree that your contributions will be licensed under the [ISC](./LICENSE) License.
 
-Thank you for considering contributing to Get Youtube Subscribers! We appreciate your support and look forward to your valuable contributions. If you have any questions, feel free to reach out to the project maintainers or refer to the [README.md](./README.md) file for additional information.
+Thank you for considering contributing to Get Youtube Subscribers! We appreciate your support and looking forward to your valuable contributions. If you have any questions, feel free to reach out to the project maintainers or refer to the [README.md](./README.md) file for additional information.

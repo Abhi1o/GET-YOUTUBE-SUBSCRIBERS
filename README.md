@@ -94,7 +94,7 @@ Contributions are welcome! If you'd like to contribute, please follow our [Contr
 - Damini Gadpal [GitHub](https://github.com/Daminigadpal) | [LinkedIn](https://www.linkedin.com/in/damini-gadpal-01996716b)
 
 ## License ⚖
-This project is Distributed under the [MIT License](https://chat.openai.com/c/LICENSE). See [LICENSE](./LICENCE) for more information.
+This project is Distributed under the ISC License. See [LICENSE](./LICENSE) for more information.
 
 ## Contact 📧
 If you have any questions or suggestions, feel free to reach out to us at [Gmail](https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLPhhCThjSQBxqqKCTksFHbgmPZGmrTXlskrtrXBgHxRqbmdRdzJJlNBtvTWsTLmjdVLbb).

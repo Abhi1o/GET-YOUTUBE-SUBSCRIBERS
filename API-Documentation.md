@@ -20,7 +20,7 @@ In case of errors, the API will respond with appropriate error status codes and 
 ## Endpoints
 - [Get Subscribers](Get_Subscribers) (` /subscribers `) 
 - [Get Subscribers by Names](Get_Subscribers_by_Names)   (` /subscribers/names `)
-- [Get Subscriber by ID](Get_Subscriber_by_ID)  (` /subscribers/:id `) 
+- [Get Subscriber by ID](Get_Subscribers_by_ID)  (` /subscribers/:id `) 
 
   ### Get Subscribers 
   ---
@@ -66,7 +66,7 @@ In case of errors, the API will respond with appropriate error status codes and 
   - **Endpoint:** `/subscribers/names `
   - **Method:** `GET`
   - **Query Parameters:**
-    - `name` (required): The name of the subscriber to search for.
+    - `names` (required): The name of the subscribers to search for.
   - **Response:**
     - Status Code: `200 OK`
     - Content-Type: application/json
@@ -95,10 +95,10 @@ In case of errors, the API will respond with appropriate error status codes and 
   ### Get_Subscriber_by_ID
   ---
   **Description:** Retrieve a specific subscriber based on their ID.
-  - **Endpoint:** `/subscribers/id`
+  - **Endpoint:** `/subscribers/:id`
   - **Method:** `GET`
   - **Query Parameters:**
-    - `id` (required): The ID of the subscriber to retrieve.
+    - `id` (required): The ID of the subscriber to retrieve data.
   - **Response:**
     - Status Code: `200 OK`
     - Content-Type: `application/json`

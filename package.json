@@ -1,14 +1,14 @@
 {
   "name": "get-youtube-subscribers",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is our backend application.",
   "main": "index.js",
   "scripts": {
     "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
     "start": "node src/index.js",
     "createDB": "node src/createDatabase.js"
   },
-  "author": "",
+  "author": "AlmaSquad",
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1",
